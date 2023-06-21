@@ -7,9 +7,9 @@ import (
 
 const (
 	defaultPort     = ":6969"
-	defaultDbName   = "testdb"
+	defaultDbName   = "postgres"
 	defaultDBEngine = "postgres"
-	defaultDbURL    = "localhost:5432"
+	defaultDbURL    = "postgresdb"
 )
 
 func (cfg *Configuration) setEnvValues() {

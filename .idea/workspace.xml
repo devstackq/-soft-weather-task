@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f03e895-dd3d-4cfb-b197-3fe3a920b47b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-1/docs/docs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-1/build/sql/create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-1/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-1/internal/database/drivers/psql/postgresql.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/internal/database/drivers/psql/postgresql.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/service-2/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-2/build/sql/create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-2/build/sql/setup.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service-2/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-2/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-2/internal/database/drivers/psql/postgresql.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-2/internal/database/drivers/psql/postgresql.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -62,17 +69,31 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service-1" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.service-1/Dockerfile">
     <configuration name="create_tables.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/service-2/build/sql/create_tables.sql" />
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="service-1/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="service-1/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.service-1/Dockerfile" />
         <item itemvalue="Database Script.create_tables.sql" />
       </list>
     </recent_temporary>

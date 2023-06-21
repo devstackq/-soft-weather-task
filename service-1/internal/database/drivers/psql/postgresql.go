@@ -33,7 +33,9 @@ func (m *PostgreSql) Connect(cfg config.DataStoreConfiguration) error {
 			" port= ", cfg.Postgres.Port,
 			" sslmode= ", cfg.Postgres.SSLMode,
 		)
+
 		fmt.Println(psqlInfo)
+
 		db, err := sql.Open("postgres", psqlInfo)
 		if err != nil {
 			return err

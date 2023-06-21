@@ -28,7 +28,7 @@ func (m *PostgreSql) Connect(cfg config.DataStoreConfiguration) error {
 		return nil
 	}
 	if m.client == nil {
-		psqlInfo := fmt.Sprint("user= postgres password=postgres dbname=testdb host=localhost port=5432 sslmode=disable") //temp todo fix
+		psqlInfo := fmt.Sprint("user= postgres password=postgres dbname=postgres host=postgresdb port=5432 sslmode=disable") //temp todo fix
 
 		db, err := sql.Open("postgres", psqlInfo)
 		if err != nil {

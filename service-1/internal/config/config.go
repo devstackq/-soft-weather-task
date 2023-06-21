@@ -7,10 +7,10 @@ import (
 
 const (
 	defaultPort     = ":9090"
-	defaultDbName   = "testdb"
+	defaultDbName   = "postgres"
 	defaultDBEngine = "postgres"
 	defaultDbURL    = "localhost:5432"
-	defaultHost     = "localhost"
+	defaultHost     = "postgresdb"
 	defaultDBPort   = "5432"
 	defaultUsername = "postgres"
 	defaultPassword = "postgres"

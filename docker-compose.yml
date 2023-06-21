@@ -1,34 +1,34 @@
 version: '3.9'
 services:
   postgresdb:
+    container_name: postgresdb
     image: postgres:latest
     ports:
       - "5432:5432"
     volumes:
-      - ./sql-scripts:/scripts
+      - postgres-data:/var/lib/postgresql/data
+      - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
     networks:
       - darknet
     environment:
       - DS_DB=postgres
-      - DB_NAME=testdb
+      - DB_NAME=postgres
       - DB_USER=postgres
       - DB_PASSWORD=postgres
-      - DB_URL=localhost
+      - DB_URL=postgresdb
       - DB_PORT=5432
-      - DB_DATABASE=testdb
-
-  sql-runner:
-    image: postgres
-    depends_on:
-      - postgresdb
-    volumes:
-      - ./sql-scripts:/scripts
-    command: psql -U postgres  -f /service-1/build/sql/create_tables.sql; psql -U postgres  -f /service-2/build/sql/create_tables.sql
+      - DB_DATABASE=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_URI=postgresdb
+      - POSTGRES_PORT=5432
+      - POSTGRES_DATABASE=postgres
 
   service_1:
+    container_name: service1
     build:
-      context: .
-      dockerfile: ./service-1/Dockerfile
+      context: ./service-1
+      dockerfile: Dockerfile
     ports:
       - 9090:9090
     depends_on:
@@ -37,19 +37,21 @@ services:
       - darknet
 
   service_2:
+     container_name: service2
      build:
-       context: .
-       dockerfile: ./service-2/Dockerfile
+       context: ./service-2
+       dockerfile: Dockerfile
      ports:
        - 6969:6969
      depends_on:
        - postgresdb
      networks:
        - darknet
+#     command:  docker exec -it  postgresdb  bash psql -U postgres -d postgres -W -f ./create_tables.sql
 
 networks:
   darknet:
     driver: bridge
 
 volumes:
-  scripts:
+  postgres-data:
