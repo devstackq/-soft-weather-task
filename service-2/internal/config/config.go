@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	defaultPort     = ":8080"
+	defaultPort     = ":6969"
 	defaultDbName   = "testdb"
 	defaultDBEngine = "postgres"
 	defaultDbURL    = "localhost:5432"

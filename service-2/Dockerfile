@@ -11,16 +11,13 @@ COPY . .
 EXPOSE 6969
 
 
-ENV DB_URL=localhost:5432/postgres:postgres@testdb
 ENV DS_DB=postgres
 ENV DB_NAME=testdb
-ENV PORT = 8080
 
-
-ENV  POSTGRES_USER=postgres
-ENV  POSTGRES_PASSWORD=postgres
-ENV  POSTGRES_URI=localhost
-ENV  POSTGRES_PORT=5432
+ENV  DB_USER=postgres
+ENV  DB_PASSWORD=postgres
+ENV  DB_URL=localhost
+ENV  DB_PORT=5432
 
 ENV PORT=6969
 
