@@ -1,0 +1,60 @@
+version: '3.9'
+services:
+  postgresdb:
+    # container_name: postgresdb
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./sql-scripts:/scripts
+    networks:
+      - darknet
+    environment:
+      - DB_URL=localhost:5432/postgres:postgres
+      - DS_DB=postgres
+      - DB_NAME=testdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_URI=localhost
+      - POSTGRES_PORT=5432
+      - POSTGRES_DATABASE=testdb
+
+  sql-runner:
+    image: postgres
+    depends_on:
+      - postgresdb
+    volumes:
+      - ./sql-scripts:/scripts
+    command: psql -U postgres  -f /build/sql/create_tables.sql
+
+  service1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 6969:6969
+    depends_on:
+      - postgresdb
+    networks:
+      - darknet
+
+  service2:
+     build:
+       context: .
+       dockerfile: Dockerfile
+     ports:
+       - 6969:6969
+     depends_on:
+       - postgresdb
+     networks:
+       - darknet
+
+networks:
+  darknet:
+    driver: bridge
+
+volumes:
+  scripts:
+
+    run sql script
+  run docker
