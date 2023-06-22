@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f03e895-dd3d-4cfb-b197-3fe3a920b47b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-1/docs/docs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-1/build/sql/create_tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-1/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-1/internal/database/drivers/psql/postgresql.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-1/internal/database/drivers/psql/postgresql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/service-2/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-2/build/sql/create_tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-2/build/sql/setup.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-2/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-2/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-2/internal/database/drivers/psql/postgresql.go" beforeDir="false" afterPath="$PROJECT_DIR$/service-2/internal/database/drivers/psql/postgresql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-sql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-sql.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +32,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/devstackq/Documents/-soft-weather-task",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/devstackq/Documents/-soft-weather-task&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/service-1" />
@@ -80,7 +69,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="service-1/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">

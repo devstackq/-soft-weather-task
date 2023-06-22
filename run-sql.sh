@@ -35,9 +35,8 @@ CREATE TABLE IF NOT EXISTS  history
     FOREIGN KEY (task_id) REFERENCES task(id)
     );
 
-insert into task(name, price) values('taska1', 143);
-insert into task(name, price) values('taska2', 503);
-insert into task(name, price) values('taska3', 87);
-
+insert into users(name, login) values('test','login');
+insert into task(name, price) values('task1', 241);
+insert into account(user_id) values(1);
 
 EOF
